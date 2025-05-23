@@ -1,0 +1,46 @@
+<div class="background" #bg>
+  <div class="content" *ngIf="!showWish">
+    <div class="box-canvas">
+      <div class="plate"></div>
+      <div class="cake-side"></div>
+      <div class="drips">
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+      </div>
+      <div class="cake-top"></div>
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+    </div>
+    <button (click)="showText()">ไปกันต่อ!!</button>
+  </div>
+
+  <!-- <div class="night">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div> -->
+
+  <!-- คำอวยพร -->
+  <div class="wish" *ngIf="showWish">
+    <div class="happy-birthday">
+      <h1
+        *ngFor="let char of birthdayText; let i = index"
+        [style.animationDelay]="i * 0.1 + 's'"
+      >
+        {{ char }}
+      </h1>
+    </div>
+    <p [class.show-paragraph]="showParagraph">{{ wishMessage }}</p>
+    <button (click)="goto()">ไปดูรูปดีกว่า</button>
+  </div>
+  <audio #happybirthday src=".//public/HappyBirthday.mp3" autoplay></audio>
+</div>

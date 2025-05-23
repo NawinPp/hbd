@@ -1,0 +1,173 @@
+.background {
+  background-color: pink;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 300px;
+    height: auto;
+    opacity: 0;
+    animation: appearScale 1s ease-out forwards;
+  }
+
+  .cake-image.pulsing {
+    animation: pulseScale 2s ease-in-out infinite;
+    opacity: 1;
+  }
+
+  .cake-image.stop {
+    animation: none;
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  button {
+    margin-top: 2rem;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 6px;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #ff66b2;
+    color: #ffff;
+    border-radius: 6px;
+  }
+}
+
+/* เฟสแรก: ค่อยๆ โผล่มา */
+@keyframes appearScale {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* เฟสสอง: วนระหว่าง 1.2 ↔ 1.5 */
+@keyframes pulseScale {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+.wish {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  padding: 20px 30px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease forwards;
+
+  button {
+    margin-top: 2rem;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 6px;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #ff66b2;
+    color: #ffff;
+    border-radius: 6px;
+  }
+}
+
+.happy-birthday {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  h1 {
+    opacity: 0;
+    animation: letterAppear 0.4s ease-out forwards;
+    margin: 0 4px;
+    font-size: 3rem;
+  }
+}
+@keyframes letterAppear {
+  0% {
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+p {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+p.show-paragraph {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+:root {
+  -cake-color: #f8ca8e;
+  -icing-color: #f990a0;
+  -icing-highlight: #f7b8c0;
+}
+.box-canvas {
+  position: relative;
+  display: flex;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  width: 150px;
+  height: 170px;
+}
+.plate {
+  position: absolute;
+  bottom: 15px;
+  width: 175px;
+  height: 90px;
+  background: #bfbfbf;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,9 @@
+<div class="backgroud">
+  <div class="content" [class.float-up]="isFloating">
+    <img src=".//public/balloon3.png" alt="balloon" />
+    <div class="in">
+      <input type="text" name="date" id="date" placeholder="กรุณาใส่วันเกิดค่ะ" [(ngModel)]="birthdayCode" />
+      <button (click)="onClick()">Let's Go!!</button>
+    </div>
+  </div>
+</div>

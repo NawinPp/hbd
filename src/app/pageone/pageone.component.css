@@ -1,0 +1,40 @@
+.background {
+  background-color: pink;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* width: 500px; */
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.2); /* โปร่งใส */
+  backdrop-filter: blur(10px); /* เอฟเฟกต์เบลอ */
+  -webkit-backdrop-filter: blur(10px); /* รองรับ Safari */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเล็กน้อย */
+}
+
+button {
+  background-color: #d43f5e;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเล็กน้อย */
+}
+button:hover {
+    background-color: #b52e4c;
+  }

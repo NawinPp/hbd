@@ -1,274 +1,173 @@
-<div class="background">
-  <audio #happybirthday src="assets/HappyBirthday.mp3" autoplay></audio>
-  <div class="header-container">
-    <h1>รูปที่(กู)ชอบ</h1>
-  </div>
-  <!-- ลูกศรเลื่อนลง -->
-  <div class="scroll-down">
-    <span>&#x25BC;</span>
-    <!-- ลูกศรลงแบบ Unicode -->
-  </div>
+<!-- ============================================
+  รูปที่(กู)ชอบ — Scrapbook Edition
+  Angular standalone + Tailwind CSS
+============================================ -->
 
-  <div class="photos">
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_4868.jpeg" alt="one" />
-      <div class="text">
-        <p>รูปแรกที่ถ่ายกันและรู้จักกันครั้งแรก</p>
-      </div>
-    </div>
+<audio #audioRef src="assets/HappyBirthday.mp3" loop preload="auto"></audio>
 
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_5039.jpeg" alt="balloon" />
-      <div class="text">
-        <p>ผู้หญิงอะไรกินเหล้าเก่งคัก</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_5040.jpeg" alt="balloon" />
-      <div class="text">
-        <p>แต่ว่าทริปนี้ก็คือสนุกนะ</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <video width="200" controls>
-        <source src="assets/IMG_9272.mp4" type="video/mp4" />
-      </video>
-      <div class="text">
-        <p>มึงก็ชอบเล่นน้ำเกิน เล่นจนตัวเปือยแล้วมั้ง</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_2465.PNG" alt="balloon" />
-      <div class="text">
-        <p>filter หมอกเกินน สมัยไลฟ์สด</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_5752.png" alt="balloon" />
-      <div class="text">
-        <p>รู้แหละว่าท้อใจที่กูถ่ายรูปให้ไม่ได้ดั่งใจ5555</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_6030.png" alt="balloon" />
-      <div class="text">
-        <p>ขายาวมากแม่....</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_6270.png" alt="balloon" />
-      <div class="text">
-        <p>รูปนี้กูชอบมาก ธรรมชาติสุด สวยเกินนน</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_6274.png" alt="balloon" />
-      <div class="text">
-        <p>นี่ก็ธรรมชาติ555</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_6290.png" alt="balloon" />
-      <div class="text">
-        <p>สวย น่ารัก แล้วก็บ่นเก่ง</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_6293.png" alt="balloon" />
-      <div class="text">
-        <p>เซ็กซี่สุดๆรูปนี้</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_6302.png" alt="balloon" />
-      <div class="text">
-        <p>รูปที่เผลอๆ คือน่ารักมาก555</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_6304.png" alt="balloon" />
-      <div class="text">
-        <p>นี่ก็เซ็กซี่ฉุดๆ</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_6337.png" alt="balloon" />
-      <div class="text">
-        <p>คมชัดสุดๆ555</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_6343.png" alt="balloon" />
-      <div class="text">
-        <p>รอยยิ้มมีเสน่ห์เกิน</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_6360.png" alt="balloon" />
-      <div class="text">
-        <p>ยิ่งมองยิ่งน่ารัก555</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_6405.png" alt="balloon" />
-      <div class="text">
-        <p>กว่าจะได้แต่ละรูป555</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_6442.png" alt="balloon" />
-      <div class="text">
-        <p>รอยยิ้มนี้ที่มันดึงดูด</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_6453.png" alt="balloon" />
-      <div class="text">
-        <p>555555555555</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_6460.png" alt="balloon" />
-      <div class="text">
-        <p>เริ่มไม่มีคำบรรยายละ55</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_6461.png" alt="balloon" />
-      <div class="text">
-        <p>เอาเป็นว่าดูรูปไปเฉยๆล่ะกัน</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_6471.png" alt="balloon" />
-      <div class="text">
-        <p>กูแมร่งชอบทุกรูป55</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_6421.png" alt="balloon" />
-      <div class="text">
-        <p>จังหวะที่ใช่ใครก็ชอบ555</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_6401.png" alt="balloon" />
-      <div class="text">
-        <p>หน้าตอนที่มึงบ่นกูนิคือน่ารักเกิน55</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_6512.png" alt="balloon" />
-      <div class="text">
-        <p>หนึ่งวันพันเรื่อง555 คนอะไรขี้ลืมเกิน</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_6557.png" alt="balloon" />
-      <div class="text">
-        <p>บรรยากาศกำลังดีกับคนที่น่ารักอย่างเธอ แต่คนอย่างเยอะ</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_6560.png" alt="balloon" />
-      <div class="text">
-        <p>บร๊ะ! รูปนี้สวยจริ้งงง</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_6571.png" alt="balloon" />
-      <div class="text">
-        <p>
-          ฉ๊วยยยย ถ้ากูบอกไม่สวยก็ได้ไม่ เดียวมึงก็จะบอกว่า
-          "มึงต้องพูดว่ากูสวยยยย"
-        </p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/IMG_6525.png" alt="balloon" />
-      <div class="text">
-        <p>ฉ๊วยยยย ภาคสอง555</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <img src="assets/IMG_6515.png" alt="balloon" />
-      <div class="text">
-        <p>ฉ๊วยยยย ภาคสาม555</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <img src="assets/tay1.JPG" alt="balloon" />
-      <div class="text">
-        <p>ฉ๊วยยยย ภาคสี่555</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <video width="200" controls>
-        <source src="assets/IMG_6700.mp4" type="video/mp4" />
-      </video>
-      <div class="text">
-        <p>ขี้เหล้าจริงไม่อิงสตั้น</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <video width="200" controls>
-        <source src="assets/IMG_6698.mp4" type="video/mp4" />
-      </video>
-      <div class="text">
-        <p>เอาสุดเกิน</p>
-      </div>
-    </div>
-
-    <div class="photo-left" data-aos="fade-left">
-      <video width="200" controls>
-        <source src="./assets/tay.MP4" type="video/mp4" />
-      </video>
-      <div class="text">
-        <p>น่ารักเกิน</p>
-      </div>
-    </div>
-
-    <div class="photo-right" data-aos="fade-right">
-      <div class="text">
-        <p>
-          สุดท้ายแล้ว กูอาจจะไม่มีของขวัญที่เป็นชิ้นให้มึงหรอกนะ
-          แต่กูตั้งใจทำเว็บนี้ขึ้นมาให้มึงเลยนะ ถึงมันจะดูธรรมดาก็เถอะแต่กูก็ตั้งใจทำ กูขอให้มึงมีความสุขมากๆนะ
-          อย่าเจอเรื่องเศร้าใจ แต่ถ้ามึงเจอเรื่องที่ทำให้เศร้า และท้อใจ
-          ขอให้รู้ไว้ว่ากูอยู่ตรงนี้นะ ข้างๆมึง ที่ๆมึงหันมาเมื่อไหร่ก็จะเจอกูเสมอ กูจะคอยดูแลมึง
-          คอยซัพพอร์ตมึงอยู่แบบนี้แหละ และจะพยายามเป็นที่ที่ทำให้มึงสบายใจ &hearts;&hearts;&hearts;
-        </p>
-      </div>
-    </div>
-  </div>
+<!-- Progress bar เลื่อนอ่าน -->
+<div class="fixed left-0 top-0 z-50 h-1 w-full bg-rose-100/40">
+  <div
+    class="h-full bg-linear-to-r from-rose-400 via-pink-500 to-rose-600 transition-[width] duration-150"
+    [style.width.%]="scrollProgress"
+  ></div>
 </div>
+
+<!-- ปุ่มเปิด/ปิดเพลง — มุมขวาบน -->
+<button
+  type="button"
+  (click)="toggleMusic()"
+  class="fixed right-5 top-5 z-50 grid h-12 w-12 place-items-center rounded-full border border-rose-200 bg-white/80 text-rose-500 shadow-lg shadow-rose-200/40 backdrop-blur-md transition hover:scale-110 hover:bg-white"
+  [attr.aria-label]="isPlaying ? 'ปิดเพลง' : 'เปิดเพลง'"
+>
+  <svg *ngIf="isPlaying" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 animate-spin-slow">
+    <path d="M9 17V5l12-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="15" r="3"/>
+  </svg>
+  <svg *ngIf="!isPlaying" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
+    <path d="M9 17V5l12-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="15" r="3"/>
+    <line x1="3" y1="3" x2="21" y2="21" stroke-linecap="round"/>
+  </svg>
+</button>
+
+<main class="relative min-h-screen overflow-hidden bg-linear-to-br from-[#fdf4ee] via-[#fce7eb] to-[#f8d4dc] text-stone-800">
+
+  <!-- Paper grain texture overlay -->
+  <div class="pointer-events-none fixed inset-0 z-0 opacity-[0.18] mix-blend-multiply paper-grain"></div>
+
+  <!-- Floating hearts decoration -->
+  <div class="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+    <span class="absolute left-[8%] top-[12%] text-7xl text-rose-300/50 float-slow">♥</span>
+    <span class="absolute right-[10%] top-[20%] text-5xl text-pink-400/40 float-medium">♡</span>
+    <span class="absolute left-[15%] top-[60%] text-6xl text-rose-200/60 float-fast">✿</span>
+    <span class="absolute right-[12%] top-[75%] text-4xl text-pink-300/50 float-slow">♥</span>
+    <span class="absolute left-[50%] top-[35%] text-5xl text-rose-300/40 float-medium">❀</span>
+  </div>
+
+  <!-- ============= HERO ============= -->
+  <section class="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center">
+    <p class="mb-6 text-xs font-medium uppercase tracking-[0.4em] text-rose-500/80">
+      ── A Little Memory Book ──
+    </p>
+
+    <h1 class="font-display text-6xl leading-none text-stone-900 sm:text-7xl md:text-8xl lg:text-[9rem]">
+      รูปที่<span class="relative inline-block">
+        <span class="relative z-10 italic text-rose-600">(กู)</span>
+        <span class="absolute inset-x-0 bottom-2 z-0 h-3 bg-rose-200/80"></span>
+      </span>ชอบ
+    </h1>
+
+    <p class="mt-8 max-w-md font-handwrite text-xl leading-relaxed text-stone-600">
+      รวมรูปที่กูชอบที่สุด<br/>
+      เก็บไว้ในที่เดียว — สำหรับมึงคนเดียว
+    </p>
+
+    <div class="mt-12 flex items-center gap-4">
+      <span class="h-px w-16 bg-stone-400/60"></span>
+      <span class="text-2xl text-rose-500">♥</span>
+      <span class="h-px w-16 bg-stone-400/60"></span>
+    </div>
+
+    <button
+      type="button"
+      (click)="scrollToPhotos()"
+      class="group absolute bottom-12 flex flex-col items-center gap-2 text-stone-500 transition hover:text-rose-500"
+      aria-label="เลื่อนดูรูป"
+    >
+      <span class="text-xs uppercase tracking-[0.3em]">scroll</span>
+      <span class="grid h-12 w-12 place-items-center rounded-full border border-stone-400/60 transition group-hover:border-rose-400">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5 animate-bounce-soft">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </span>
+    </button>
+  </section>
+
+  <!-- ============= GALLERY ============= -->
+  <section #photosSection class="relative z-10 px-4 py-20 sm:px-8 md:px-12">
+    <div class="mx-auto mb-20 max-w-xl text-center">
+      <p class="mb-3 text-xs uppercase tracking-[0.4em] text-rose-500/80">Chapter One</p>
+      <h2 class="font-display text-4xl text-stone-900 sm:text-5xl">ความทรงจำของเรา</h2>
+      <p class="mt-4 font-handwrite text-lg text-stone-600">{{ memories.length }} รูป · นับไม่ถ้วนเรื่องราว</p>
+    </div>
+
+    <div class="mx-auto flex max-w-5xl flex-col gap-16 sm:gap-20">
+      <article
+        *ngFor="let m of memories; let i = index"
+        class="reveal flex"
+        [class.justify-start]="i % 2 === 0"
+        [class.justify-end]="i % 2 !== 0"
+      >
+        <div
+          class="polaroid group relative w-full max-w-70 bg-[#fffdf9] p-3 pb-16 shadow-[0_12px_30px_-8px_rgba(190,80,100,0.25)] transition-transform duration-500 hover:rotate-0! hover:scale-105 sm:max-w-[320px]"
+          [style.transform]="'rotate(' + (m.tilt || 0) + 'deg)'"
+        >
+          <span class="tape absolute -top-3 left-1/2 z-10 h-6 w-20 -translate-x-1/2"></span>
+
+          <span class="absolute -left-3 -top-3 z-10 grid h-9 w-9 place-items-center rounded-full bg-rose-500 font-display text-sm text-white shadow-md">
+            {{ i + 1 }}
+          </span>
+
+          <div class="relative aspect-4/5 w-full overflow-hidden bg-stone-100">
+            <img
+              *ngIf="m.type === 'image'"
+              [src]="m.src"
+              [alt]="m.caption"
+              loading="lazy"
+              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <video
+              *ngIf="m.type === 'video'"
+              [src]="m.src"
+              controls
+              playsinline
+              preload="metadata"
+              class="h-full w-full object-cover"
+            ></video>
+          </div>
+
+          <p class="absolute inset-x-3 bottom-3 px-2 text-center font-handwrite text-base leading-snug text-stone-700">
+            {{ m.caption }}
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============= LETTER ============= -->
+  <section class="relative z-10 px-6 py-24">
+    <div class="reveal mx-auto max-w-2xl">
+      <div class="mb-6 text-center">
+        <p class="mb-2 text-xs uppercase tracking-[0.4em] text-rose-500/80">— With Love —</p>
+        <h2 class="font-display text-4xl text-stone-900 sm:text-5xl">จดหมายถึงมึง</h2>
+      </div>
+
+      <div class="letter relative bg-[#fffdf8] p-8 shadow-[0_20px_50px_-10px_rgba(190,80,100,0.3)] sm:p-12">
+        <span class="absolute right-0 top-0 h-16 w-16 letter-fold"></span>
+
+        <div class="absolute -right-3 -top-3 h-20 w-16 rotate-6 bg-linear-to-br from-rose-400 to-pink-600 p-1.5 shadow-lg">
+          <div class="grid h-full w-full place-items-center border border-white/40 text-white">
+            <span class="text-3xl">♥</span>
+          </div>
+        </div>
+
+        <p class="mb-4 font-display text-lg text-stone-600">ถึง คนที่กูชอบ,</p>
+
+        <p class="whitespace-pre-line font-handwrite text-lg leading-loose text-stone-700 sm:text-xl">{{ finalMessage }}</p>
+
+        <div class="mt-10 flex items-center justify-between">
+          <div class="flex gap-1.5 text-2xl text-rose-500">
+            <span class="animate-pulse">♥</span>
+            <span class="animate-pulse" style="animation-delay: 0.2s">♥</span>
+            <span class="animate-pulse" style="animation-delay: 0.4s">♥</span>
+          </div>
+          <p class="font-handwrite text-xl text-stone-600">— จากกู</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= FOOTER ============= -->
+  <footer class="relative z-10 px-6 pb-10 pt-4 text-center text-xs uppercase tracking-[0.3em] text-stone-500">
+    Made with ♥
+  </footer>
+</main>
